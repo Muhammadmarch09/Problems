@@ -9,7 +9,7 @@ function reverseString(str){
     return reverseStr
 
 }
-let result = reverseString("Hello")
+// let result = reverseString("Hello")
 // console.log(result)
 
 // Write a FizzBuzz function 
@@ -30,3 +30,36 @@ function fizzbuzz(){
     }
 }
 // fizzbuzz()
+
+// Write a function that return the largest number from an Array 
+
+function largestNumber(arr){
+let largest = arr[0]
+for(let i = 1;i<arr.length;i++){
+    if(largest<arr[i]){
+        largest = arr[i]
+
+    }
+    
+
+}
+return largest
+}
+myArray = [1,3,5,6,3,1]
+// let resultArr = largestNumber(myArray)
+// console.log(resultArr)
+
+// Make a function that check a string is palindrom 
+ 
+function ispalindrom(str){
+    let reverseStr = str.split("").reverse().join("")
+    if(str == reverseStr){
+        return `Yes ${str} is palindrom`
+
+    }
+    else{
+        return `No ${str} isn't palindrom`
+    }
+}
+// let result = ispalindrom("eye")
+// console.log(result)
