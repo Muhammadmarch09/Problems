@@ -63,3 +63,30 @@ function ispalindrom(str){
 }
 // let result = ispalindrom("eye")
 // console.log(result)
+
+// write a function that return sum of an Array 
+function sumArray(arr){
+let sum = 0
+for(let i = 0;i<arr.length;i++){
+    sum  += arr[i]
+}
+return sum
+}
+
+// myArray = [1,3,4,5,6]
+// let result = sumArray(myArray)
+// console.log(result)
+
+// Write a function that removes duplicates from an Array
+
+function removeDuplicates(arr){
+    let uniqueSet = new Set(arr)
+    let uniqueArray = Array.from(uniqueSet)
+    return uniqueArray
+
+
+
+}
+let myarray = [1,2,34,21,1,2,3,55,6,43,2,3,4]
+let result = removeDuplicates(myarray)
+console.log(result)
